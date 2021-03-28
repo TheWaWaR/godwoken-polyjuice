@@ -4,6 +4,7 @@ pub(crate) mod contract_call_contract;
 pub(crate) mod contract_create_contract;
 pub(crate) mod delegatecall;
 pub(crate) mod erc20;
+pub(crate) mod mock_usdt;
 pub(crate) mod get_block_info;
 pub(crate) mod parse_log_event;
 pub(crate) mod selfdestruct;
