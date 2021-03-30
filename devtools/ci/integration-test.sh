@@ -16,7 +16,10 @@ else
     git clone https://github.com/nervosnetwork/godwoken.git $GODWOKEN_DIR
 fi
 
-mkdir -p $GODWOKEN_DIR/c/build
+cd $GODWOKEN_DIR
+git checkout eb7174a
+
+mkdir -p $GODWOKEN_DIR/c/build/account_locks
 cp $SCRIPT_DIR/*generator $SCRIPT_DIR/*validator $GODWOKEN_DIR/c/build
 touch $GODWOKEN_DIR/c/build/account_locks/eth-account-lock
 
